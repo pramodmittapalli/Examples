@@ -27,6 +27,7 @@ public class Main extends MapActivity {
         
         // use this instead 
         mapview.setBuiltInZoomControls(true);
+       
     }
 
 	@Override

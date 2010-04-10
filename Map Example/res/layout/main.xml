@@ -20,12 +20,5 @@
 	android:clickable="true"
 	android:apiKey="07a9VH_Kgft9tLKpD9GMer4Z4eenVjBknjGDvsw"/>
     
-    <LinearLayout
-    android:id="@+id/zoomview"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignBottom="@id/mapview"
-    android:layout_centerHorizontal="true"/>
-    
     </RelativeLayout>
 </LinearLayout>
