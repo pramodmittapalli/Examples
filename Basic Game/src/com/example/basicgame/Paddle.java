@@ -9,14 +9,16 @@ public class Paddle extends GameObject {
 
 	private Paint paint; 
 	private int color; 
+	private int width; 
 	
 	public RectF position; 
 	
-	public Paddle() {
+	public Paddle(int width, int height, int ypos) {
 		paint = new Paint(); 
 		color = Color.parseColor("#55FF55FF");
 		paint.setColor(color);
-		position = new RectF(10, 300, 110, 320);
+		position = new RectF(0, ypos, width, ypos+height);
+		this.width = width;
 	}
 	
 	@Override
@@ -26,13 +28,12 @@ public class Paddle extends GameObject {
 
 	@Override
 	void step(long time, int width, int height) {
-		// TODO Auto-generated method stub
-		
+		// don't need to do anything for the paddle here		
 	}
 
 	public void touch(float x, float y) {
-		position.left = x-50; 
-		position.right = x+50;
+		position.left = x-(width/2F); 
+		position.right = x+(width/2F);
 	}
 
 }
